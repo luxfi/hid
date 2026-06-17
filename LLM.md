@@ -1,4 +1,4 @@
-# LLM.md - Hanzo Hid
+# Hanzo Hid
 
 ## Overview
 Go module: github.com/luxfi/hid
