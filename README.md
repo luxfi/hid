@@ -1,3 +1,5 @@
+<p align="center"><img src=".github/hero.svg" alt="hid" width="880"></p>
+
 [![Travis][travisimg]][travisurl]
 [![AppVeyor][appveyorimg]][appveyorurl]
 [![GoDoc][docimg]][docurl]
