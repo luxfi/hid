@@ -14,12 +14,12 @@ import (
 // Tests that device enumeration can be called concurrently from multiple threads.
 func TestThreadedEnumerate(t *testing.T) {
 	var pend sync.WaitGroup
-	for i := 0; i < 8; i++ {
+	for i := range 8 {
 		pend.Add(1)
 
 		go func(index int) {
 			defer pend.Done()
-			for j := 0; j < 512; j++ {
+			for range 512 {
 				Enumerate(uint16(index), 0)
 			}
 		}(i)
